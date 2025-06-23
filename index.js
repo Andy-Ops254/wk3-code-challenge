@@ -43,7 +43,7 @@ function displayPosts() {
     fetch('http://localhost:3000/Posts')
         .then(res => res.json())
         .then(posts => {
-            posts.forEach((post) => {
+        posts.forEach((post) => {
                 postList.innerHTML += `<li onclick="handlePostClick(${post.id})">${post.title}</li>`
             });
         });
