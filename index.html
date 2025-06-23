@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+
     <title>BLOG POST</title>
 </head>
 <body>
     <h1>Simple Blog Post</h1>
 
-    <div id="post-list">
-        <ul>
+    <div>
+        <ul id="post-list">
 
         </ul>
     </div>
 
     <div id="post-detail">
-        <ul>
-
-        </ul>
+        
     </div>
 
-    <form action=""></form>
+    <form id="newPost">
+        <h2 class="newPostHeader">Add New Post</h2>
+        <label for="title"></label>
+        <input type="text" id="title" name="title" placeholder="Title">
+        <label for="name"></label>
+        <input type="text" id="name" placeholder="Author's Name">
+        <label for="image url"></label>
+        <input type="text" id="url" placeholder="Image url">
+        <button type="submit" class="submit-btn">Add post</button>
+        <button type="cancel" class="cancel-btn">Cancel</button>
+    </form>
 </body>
+    <script src="./index.js"></script>
 </html>

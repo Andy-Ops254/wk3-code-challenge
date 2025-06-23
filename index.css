@@ -1,0 +1,102 @@
+body{
+    background-color:rgb(241, 241, 241) ;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    font-size: 55px;
+    
+}
+#newPost {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding:12px,20px;
+    box-sizing: border-box;
+    background-color: rgb(230, 225, 220);
+    height: 50vh;
+    width: 50vw;
+    box-shadow: 0 6px 18px rgba(43, 42, 42, 0.4);
+    border-radius: 10px;
+    margin-left:50px;
+    margin-top: 50px;
+
+}
+
+#newPost#title {
+    margin-bottom: 20px;
+}
+#newpost#name {
+    margin-bottom: 20px;
+}
+
+input[type=text] {
+width: 50%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border-radius: 15px;
+background-color: white;
+outline: none;
+margin-top: 40px;
+margin-left: 40px;
+text-align:left;
+border-style: none;
+cursor:pointer;
+font-size: 20px;
+}
+
+input[type=text]:focus {
+outline: none;
+
+}
+
+#newPost .submit-btn {
+    padding: 8px;
+    margin-top: 20px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 15px;
+    border-style: none ;
+    cursor:pointer;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 12x;
+
+}
+
+input[type=text]:hover {
+border:2px solid #888;
+background-color: #d6d1d1fb;
+outline:none;
+}
+
+#newPost .newPostHeader {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#newPost .newPostHeader::before{
+    content: "+ ";
+    color:black;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+/* #newPost{
+    width: 90vh;
+    max-width: 500px;
+    min-width: 250px;
+    margin:40px auto;
+    padding:16px;
+    align-items: stretch;
+}
+
+input[type=text] {
+    width: 100%;
+    margin: 16px 0;
+    margin-left: 0;
+    margin-top: 0;
+} */
