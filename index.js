@@ -1,3 +1,5 @@
+const BASE_URL = 'https://json-server-7rne.onrender.com';
+
 let postList = document.getElementById('post-list');
 let postContainer = document.getElementById('post-detail');
 let postForm = document.getElementById('newPost');
