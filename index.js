@@ -15,13 +15,13 @@ function addPostListener() {
             author: name,
             content: content
         }
-        fetch('http://localhost:3000/Posts', {
+        fetch(BASE_URL), {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(post)
-        })
+        }
         .then(resp => resp.json())
         .then(postObject =>{
             postList.innerHTML = `<li onclick="handlePostClick(${postObject.id})">${postObject.title}</li>` + postList.innerHTML
@@ -30,7 +30,7 @@ function addPostListener() {
 };
 
 function handlePostClick(postID) {
-    fetch(`http://localhost:3000/Posts/${postID}`)
+    fetch(`BASE_URL ${postID}`)
     .then(resp => resp.json())
     .then(post => {
         postContainer.innerHTML = `
@@ -42,7 +42,7 @@ function handlePostClick(postID) {
 };
 
 function displayPosts() {
-    fetch('http://localhost:3000/Posts')
+    fetch(BASE_URL)
         .then(res => res.json())
         .then(posts => {
         posts.forEach((post) => {
